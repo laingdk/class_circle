@@ -16,8 +16,8 @@ test_that('the circumference function works', {
 })
 
 test_that('other erroneous cases', {
-  expect_error(circle(1,2,0))
+  expect_error(circle("rectangle","triangle"))
+  expect_error(circle(c(2,10)))
   expect_error(circle())
-  expect_error(circle("a", "b"))
-  expect_error(circle("1","2"))
+  expect_error(circle("", ""))
 })
